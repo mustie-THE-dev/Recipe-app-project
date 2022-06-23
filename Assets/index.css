@@ -13,6 +13,7 @@ img{
 html{
     font-family: 'Montserrat';
     font-size: 12px;
+    font-weight: 600;
 }
 section{
     min-height: 100vh;
@@ -97,4 +98,15 @@ form .fa-solid {
       background-color: darkgray;
       padding: 10px 0;
       color: aliceblue;
+      font-size: 1.5rem;
+      margin-top: 20px;
+      align-self: flex-start;
+}
+.data-item{
+    color: aliceblue;
+    display: block;
+    font-size: 1.5rem;
+    letter-spacing: .05rem;
+    margin-top: 10px;
+    
 }
