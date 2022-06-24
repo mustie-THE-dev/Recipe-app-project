@@ -30,7 +30,7 @@ function generateHTML(results){
           alt=""
         />
         <div class="flex-cont">
-          <h1 class="title">Check the recipe</h1>
+          <h1 class="title">${result.recipe.label}</h1>
           <a
             class="btn"
             style="
@@ -46,7 +46,9 @@ function generateHTML(results){
             
             href="#">View Recipe</a>
           
-        </div>  
+        </div>
+        <p class="data-item">${result.recipe.calories.toFixed(2)}</p>
+          </div>  
         `
 
     })
