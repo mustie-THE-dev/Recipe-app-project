@@ -47,7 +47,10 @@ function generateHTML(results){
             href="${result.recipe.url}" target="_blank">View Recipe</a>
           
         </div>
-        <p class="data-item">${result.recipe.calories.toFixed(2)}</p>
+        <p class="data-item">Calories: ${result.recipe.calories.toFixed(2)}</p>
+        <p class="data-item">Total Time: ${result.recipe.totalTime}</p>
+        <p class="data-item">Cuisine Type: ${result.recipe.cuisineType}</p>
+        <p class="data-item">Meal Type: ${result.recipe.mealType}</p>
           </div>  
         `
 
