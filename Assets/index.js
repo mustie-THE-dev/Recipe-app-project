@@ -48,9 +48,9 @@ function generateHTML(results){
           
         </div>
         <p class="data-item">Calories: ${result.recipe.calories.toFixed(2)}</p>
-        <p class="data-item">Total Time: ${result.recipe.totalTime}</p>
-        <p class="data-item">Cuisine Type: ${result.recipe.cuisineType}</p>
+         <p class="data-item">Cuisine Type: ${result.recipe.cuisineType}</p>
         <p class="data-item">Meal Type: ${result.recipe.mealType}</p>
+        <p class="data-item">Total Time: ${result.recipe.totalTime}</p>
           </div>  
         `
 
