@@ -44,7 +44,7 @@ function generateHTML(results){
               margin-top: 20px;
               align-self: flex-start;"
             
-            href="#">View Recipe</a>
+            href="${result.recipe.url}" target="_blank">View Recipe</a>
           
         </div>
         <p class="data-item">${result.recipe.calories.toFixed(2)}</p>
