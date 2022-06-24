@@ -13,8 +13,8 @@ fetchAPI();
 });
 
 async function fetchAPI (){
-    const baseUrl =`https://api.edamam.com/search?q=pizza&app_id=${APP_Id}&app_key=${APP_key}`; 
+    const baseUrl =`https://api.edamam.com/search?q=pizza&app_id=${APP_Id}&app_key=${APP_key}&to=30`; 
     const response = await fetch(baseUrl);
-    
-    console.log(response);
+    const data = await response.json();
+    console.log(data);
 }
