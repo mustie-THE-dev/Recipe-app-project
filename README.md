@@ -22,14 +22,14 @@ The Recipify App is a web app configured to offer an array of recipes for differ
 | Display APP Name| **On page load** | shows app name |
 | Display Toggler Button| **on page load** | lists the page layout buttons |
 | Display Search Form| **on click of Search Recipe** | displays different recipes,dishes and cuisines from the choosen category|
-| Display About paragraph| **on click of read more** | Display hidden paragraph |
 
 
  ###  Features
 
- * User can see diffrent therapist from across the world
- * Users can contact their therapist they want
- * Users can read blogs from diffrent sources
+ * User can see different recipes of different meals
+ * Users can know the calories content of a certain meal
+ * Users can see the meal type of a certain dish
+ * Users can see the total time taken to prepare a certain recipe
  
 
  ###  Requirements/Installation
@@ -51,7 +51,6 @@ The Recipify App is a web app configured to offer an array of recipes for differ
  ****
 
 ### Live Link
-https://maiyoj.github.io/Feeling-and-Healing/
 
 ### Technology  Used
 * HTML - which was used to develope the structure off the pages.
@@ -65,7 +64,7 @@ https://maiyoj.github.io/Feeling-and-Healing/
 ## Licence
 MIT License
 
-Copyright (c) 2022 Valentine Maiyo
+Copyright (c) 2022 Simon Kamau
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -86,4 +85,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 [Go Back to the top](#)
 ## Authors Info
-Email- maiyoj12@gmail.com
+Email- mustaphasimon18@gmail.com
+Github-https://github.com/mustie-THE-dev
+Twitter-@Mustie___
