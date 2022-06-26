@@ -1,35 +1,34 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-  console.log('DOM fully loaded and parsed');
+document.addEventListener("DOMContentLoaded", (event) => {
+  console.log("DOM fully loaded and parsed");
 });
 
 //fetching data from a public external API using app id and app key
-const searchForm = document.querySelector('form');
-const searchResultDiv = document.querySelector('.search-result');
-const container = document.querySelector('.container');
-let searchQuery = '';
-const APP_Id = '07e48c42';
-const APP_key = '32d915ce0f9751188c2d9e17b8bc41de'
+const searchForm = document.querySelector("form");
+const searchResultDiv = document.querySelector(".search-result");
+const container = document.querySelector(".container");
+let searchQuery = "";
+const APP_Id = "07e48c42";
+const APP_key = "32d915ce0f9751188c2d9e17b8bc41de";
 const baseUrl = `https://api.edamam.com/search?q=chicken&app_id=${APP_Id}&app_key=${APP_key}`;
 
-searchForm.addEventListener('submit', (e) => {
-e.preventDefault();
-searchQuery = e.target.querySelector('input').value;
-fetchAPI();
+searchForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  searchQuery = e.target.querySelector("input").value;
+  fetchAPI();
 });
 
 //API to fetch different recipes
-async function fetchAPI (){
-    const baseUrl =`https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_Id}&app_key=${APP_key}&to=18`; 
-    const response = await fetch(baseUrl);
-    const data = await response.json();
-    generateHTML(data.hits)
-    console.log(data);
+async function fetchAPI() {
+  const baseUrl = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_Id}&app_key=${APP_key}&to=18`;
+  const response = await fetch(baseUrl);
+  const data = await response.json();
+  generateHTML(data.hits);
+  console.log(data);
 }
-function generateHTML(results){
-    let generatedHTML = '';
-    results.map(result =>{
-        generatedHTML +=
-        `
+function generateHTML(results) {
+  let generatedHTML = "";
+  results.map((result) => {
+    generatedHTML += `
          <div class="item">
         <img
           src="${result.recipe.image}"
@@ -58,8 +57,7 @@ function generateHTML(results){
         <p class="data-item">Meal Type: ${result.recipe.mealType}</p>
         <p class="data-item">Total Time: ${result.recipe.totalTime}</p>
           </div>  
-        `
-
-    })
-    searchResultDiv.innerHTML = generatedHTML;
+        `;
+  });
+  searchResultDiv.innerHTML = generatedHTML;
 }
